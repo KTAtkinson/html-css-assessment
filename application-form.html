@@ -3,8 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <title>Skills-HTML-CSS</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <!-- your html goes here -->
+        <h1>Ubermelon application</h1>
+        <p>If you are interested in employment at ubermelon please fill out the form
+            below. Please remember to fill in all the provided fields. If you are
+            interested in more than one position please submit multiple forms.
+        </p>
+        <form action="/application" method="post">
+            <label>First name: <input type="text" name="fiest-name"></label><br>
+            <label>Last name: <input type="text" name="last-name"></label><br>
+            <label>Required salery: <input type="number" name="required-salery"></label><br>
+            <div>Desired position:</div>
+            <label><input type="radio" name="job-title" value="swe">Software Engineer</label><br>
+            <label><input type="radio" name="job-title" value="qae">QA Engineer</label><br>
+            <label><input type="radio" name="job-title" value="pm">Product Manager</label><br>
+            <input type="submit">
+        </form>
     </body>
 </html>
